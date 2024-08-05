@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="assets/icon/icon2.png">
+
+
+    <link rel="stylesheet" href="styles/about.css" />
+    <title>About</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <div class="left">
+          <a href="index.html" id="logo">Mahad</a>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about">
+      <div class="main">
+        <img src="assets/about assets/mypic.png" alt="" />
+        <div class="about-text">
+          <h1>About Me</h1>
+          <h5>Web Developer & <span id="element"></span></h5>
+          <p>
+            Welcome to my portfolio! I am Muhammad Mahad Ashan, an aspiring Web
+            Developer and Graphics Designer with a passion for creating dynamic
+            and user-friendly websites. With a strong foundation in HTML, CSS,
+            JavaScript, and React, I bring both technical expertise and a
+            creative mindset to every project. My journey in web development is
+            complemented by hands-on experience in building and maintaining
+            websites, including a game in Java called Flappy Chicken. I am
+            currently honing my skills as a Frontend Developer intern at
+            Pinnacle Full-Stack Interns. Explore my work to see how I can bring
+            innovative solutions to your web development needs.
+          </p>
+          <div class="buttons">
+            <button type="button"><a href="contact.html">Let's Talk</a></button>
+            <button type="button" id="downloadResume">Download Resume</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href="https://www.instagram.com/mahadashan/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/m-mahad-ashan-aa8aa32ba/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/mahadashan" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>
+          Copyright &copy;2024 | Designed by
+          <span class="designer">M. Mahad Ashan</span>
+        </p>
+      </div>
+    </footer>
+
+    <script src="scripts/typed.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Graphics Designer."],
+        typeSpeed: 50,
+      });
+
+      document
+        .getElementById("downloadResume")
+        .addEventListener("click", function () {
+          const link = document.createElement("a");
+          link.href = "assets/resume/resume.pdf";
+          link.download = "M.Mahad Ashan-resume.pdf";
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+    </script>
+  </body>
+</html>

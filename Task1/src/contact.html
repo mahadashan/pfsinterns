@@ -1,0 +1,118 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link rel="icon" href="assets/icon/icon2.png">
+
+
+      <link rel="stylesheet" href="styles/contact.css" />
+
+      <title>Contact</title>
+    </head>
+
+    <body>
+      <header class="header">
+        <nav>
+          <div class="left">
+            <a href="index.html" id="logo">Mahad</a>
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="kar">
+        <h2>KAR LE BHAI CONTACT!</h2>
+      </div>
+      <span id="element"></span>
+
+      <section class="contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <!-- Moved contact-info div before contact-form div -->
+            <div class="contact-info">
+              <h3>Contact Information</h3>
+              <p><i class="fas fa-phone"></i>+923030888980</p>
+              <p><i class="fas fa-envelope"></i>mahad2292006@gmail.com</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>College Road, Ameer Chowk
+                PCSIR Society Lahore
+              </p>
+            </div>
+            <!-- Moved contact-form div after contact-info div -->
+            <div class="contact-form">
+              <h3>Send me a message</h3>
+              <form action="#">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Your Name" />
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Your Email" />
+                </div>
+                <div class="form-group">
+                  <textarea name="message" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footerContainer">
+          <div class="socialIcons">
+            <a href="https://www.instagram.com/mahadashan/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/m-mahad-ashan-aa8aa32ba/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/mahadashan" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="footerNav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>
+            Copyright &copy;2024 | Designed by
+            <span class="designer">M. Mahad Ashan</span>
+          </p>
+        </div>
+      </footer>
+
+      <script src="scripts/typed.js"></script>
+      <script>
+        var typed = new Typed("#element", {
+          strings: [
+            "Aap ki maa ka bharosa hum jeetain gaye. Aap kaam de kar to dekhyie &#128517 &#128522; ",
+          ],
+          typeSpeed: 50,
+        });
+      </script>
+    </body>
+  </html>

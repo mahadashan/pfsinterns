@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="assets/icon/icon2.png">
+
+
+    <link rel="stylesheet" href="styles/projects.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <div class="left">
+          <a href="index.html" id="logo">Shahan</a>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="project">
+      <div class="project-heading">
+        <span id="element"></span>
+        <h3>My Projects</h3>
+      </div>
+
+      <ul class="project-filter">
+        <li class="list" data-filter="all">All</li>
+        <li class="list" data-filter="prg">PRG</li>
+        <li class="list" data-filter="fone">Fone Doctors</li>
+        <li class="list" data-filter="chai">Chai ho jaye</li>
+      </ul>
+
+      <div class="project-container">
+        <!-- YAHAN PE KOI AUR PICS LAGAIN GI -->
+        <a href="javascript:void(0)" class="project-box prg">
+          <img src="assets/project assets/adhd/1.jpg" alt="" />
+        </a>
+
+        <a href="javascript:void(0)" class="project-box prg">
+          <img src="assets/project assets/adhd/2.jpg" alt="" />
+        </a>
+
+        <a href="javascript:void(0)" class="project-box prg">
+          <img src="assets/project assets/adhd/3.jpg" alt="" />
+        </a>
+
+        <a href="javascript:void(0)" class="project-box prg">
+          <img src="assets/project assets/adhd/4.jpg" alt="" />
+        </a>
+
+        <!-- FONE DOCTOR PICS -->
+        <a href="javascript:void(0)" class="project-box fone">
+          <img src="assets/project assets/fone/b-1.png" alt="" />
+        </a>
+
+        <a href="javascript:void(0)" class="project-box fone">
+          <img src="assets/project assets/fone/b-2.jpg" alt="" />
+        </a>
+
+        <a href="javascript:void(0)" class="project-box fone">
+          <img src="assets/project assets/fone/b-3.jpg" alt="" />
+        </a>
+
+        <a href="javascript:void(0)" class="project-box fone">
+          <img src="assets/project assets/fone/b-4.jpg" alt="" />
+        </a>
+
+        <a href="javascript:void(0)" class="project-box fone">
+          <img src="assets/project assets/fone/b-5.jpg" alt="" />
+        </a>
+
+        <a href="javascript:void(0)" class="project-box fone">
+          <img src="assets/project assets/fone/b-6.jpg" alt="" />
+        </a>
+
+        <!-- CHAI HO JAYE PICS -->
+        <a href="javascript:void(0)" class="project-box chai">
+          <img src="assets/project assets/chai/chai1.png" alt="" />
+        </a>
+        <a href="javascript:void(0)" class="project-box chai">
+          <img src="assets/project assets/chai/chai2.jpg" alt="" />
+        </a>
+        <a href="javascript:void(0)" class="project-box chai">
+          <img src="assets/project assets/chai/chai3.png" alt="" />
+        </a>
+        <a href="javascript:void(0)" class="project-box chai">
+          <img src="assets/project assets/chai/chai4.png" alt="" />
+        </a>
+        <a href="javascript:void(0)" class="project-box chai">
+          <img src="assets/project assets/chai/chai5.png" alt="" />
+        </a>
+        <a href="javascript:void(0)" class="project-box chai">
+          <img src="assets/project assets/chai/chai6.png" alt="" />
+        </a>
+      </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <div class="modal-content">
+        <img id="modalImg" src="" alt="" />
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href="https://www.instagram.com/mahadashan/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/m-mahad-ashan-aa8aa32ba/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/mahadashan" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="footerNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>
+          Copyright &copy; 2024 | Designed by
+          <span class="designer">M. Mahad Ashan</span>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll(".project-filter li");
+        const projects = document.querySelectorAll(".project-box");
+        const modal = document.getElementById("myModal");
+        const modalImg = document.getElementById("modalImg");
+        const span = document.getElementsByClassName("close")[0];
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter");
+
+            // Shuffle function
+            function shuffle(array) {
+              let currentIndex = array.length,
+                randomIndex;
+
+              while (currentIndex != 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                [array[currentIndex], array[randomIndex]] = [
+                  array[randomIndex],
+                  array[currentIndex],
+                ];
+              }
+
+              return array;
+            }
+
+            if (filter === "all") {
+              const shuffledProjects = shuffle(Array.from(projects));
+              shuffledProjects.forEach((project) => {
+                project.style.display = "block";
+                project.parentNode.appendChild(project);
+              });
+            } else {
+              projects.forEach((project) => {
+                project.style.display = project.classList.contains(filter)
+                  ? "block"
+                  : "none";
+              });
+            }
+          });
+        });
+
+        projects.forEach((project) => {
+          project.addEventListener("click", () => {
+            const imgSrc = project.querySelector("img").src;
+            modalImg.src = imgSrc;
+            modal.style.display = "block";
+          });
+        });
+
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+      });
+    </script>
+
+    <script src="scripts/typed.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["What I have done so far!"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
